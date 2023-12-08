@@ -1,0 +1,46 @@
+<div class="frame">
+<div class="stick first"></div>
+<div class="stick second"></div>
+<div class="stick third"></div>
+<div class="stick fourth"></div>
+</div>
+<style>
+  * {
+    margin: 0;
+    background: #5B8395
+  }
+  .frame {
+    position: absolute;
+    width: 240px;
+    height: 160px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #E3F5FD
+  }
+  .stick {
+    width: 42px;
+    height: 80px;
+    transform: skew(45deg);
+  }
+  .first {
+    position: absolute;
+    left: 16%
+  }
+  .second {
+    position: absolute;
+    left: 66.5%;
+    transform: scaleY(-1) skew(45deg);
+  }
+  .third {
+    position: absolute;
+    top: 50%;
+    left: 16%;
+    transform: scaleY(-1) skew(45deg);
+  }
+  .fourth {
+    position: absolute;
+    top: 50%;
+    left: 66.5%;
+  }
+</style>
