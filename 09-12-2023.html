@@ -1,0 +1,73 @@
+<div class="frame">
+  <div class="group">
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
+  <div class="group">
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
+  <div class="group">
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
+  <div class="group">
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
+  <div class="big-square"></div>
+</div>
+<style>
+  * {
+    background: #302562
+  }
+  .frame {
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .group {
+    position: absolute;
+    display: flex;
+    background: transparent
+  }
+  .group:nth-child(1) {
+    top: 9.5%;
+    left: -2%;
+    transform: rotate(-45deg);
+  }
+  .group:nth-child(2) {
+    top: 16%;
+    left: 54.5%;
+    transform: rotate(45deg);
+  }
+  .group:nth-child(3) {
+    top: 72.5%;
+    left: -2%;
+    transform: rotate(45deg);
+  }
+  .group:nth-child(4) {
+    top: 66%;
+    left: 54.5%;
+    transform: rotate(-45deg);
+  }
+  .square {
+    width: 40.5px;
+    height: 40.5px;
+    margin-right: 20px;
+  }
+  .big-square {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg)
+  }
+  .big-square,.square {
+    background: #0098D1;
+  }
+</style>
