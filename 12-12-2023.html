@@ -1,0 +1,58 @@
+<div class="frame">
+  <div class="polygon">
+    <div class="line-1">
+      <div class="tri"></div>
+      <div class="tri"></div>
+    </div>
+    <div class="line-2">
+      <div class="tri"></div>
+      <div class="tri"></div>
+    </div>
+  </div>
+</div>
+<style>
+  * {
+    background: #004416
+  }
+  .frame {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    background: #82CA9C
+  }
+  .polygon {
+    position: absolute;
+    width: 160px;
+    height: 90px;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+  }
+  .line-1 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 160px;
+    height: 20px;
+  }
+  .line-2 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 160px;
+    height: 20px;
+    bottom: 0%;
+    transform: rotate(180deg)
+  }
+  .tri {
+    width: 0px;
+    height: 0px;
+    border-left: 40px solid #004416;
+    border-right: 40px solid #004416;
+    border-top: 20px solid transparent;
+    background: #82CA9C
+  }
+</style>
