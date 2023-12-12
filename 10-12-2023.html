@@ -1,0 +1,53 @@
+<div class="frame">
+  <div class="left"></div>
+  <div class="mid">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+  </div>
+  <div class="right"></div>
+</div>
+<style>
+  * {
+    background: #F26522;
+  }
+  .frame {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 240px;
+    height: 120px;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+  }
+  .left {
+    border-right: 60px solid #FFF33E;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+  }
+  .mid {
+    width: 120px;
+    height: 120px;
+  }
+  .right {
+    border-left: 60px solid #FCAF17;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+  }
+  .one {
+    width: 120px;
+    height: 40px;
+    background: #FCAF17
+  }
+  .two {
+    width: 120px;
+    height: 40px;
+    background: #FFF33E
+  }
+  .three {
+    width: 120px;
+    height: 40px;
+    background: #FCAF17
+  }
+</style>
