@@ -1,0 +1,48 @@
+<div class="frame">
+  <div class="cir cir-1">
+    <div class="cir cir-2"></div>
+    <div class="rec"></div>
+  </div>
+  <div class="rectangle"></div>
+</div>
+<style>
+  * {
+    background: #62324E
+  }
+  .frame {
+    position: absolute;
+    width: 160px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+  }
+  .cir {
+    border-radius: 100% 100% 0 0;
+  }
+  .cir-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background: #FCDFEB
+  }
+  .cir-2 {
+    width: 80px;
+    height: 80px;
+    margin-top: 40px;
+  }
+  .rec {
+    width: 80px;
+    height: 40px;
+  }
+  .rectangle {
+    position: absolute;
+    width: 160px;
+    height: 40px;
+    bottom: 0;
+    background: linear-gradient( to right, #FCDFEB 50%, #62324E 50%, #62324E 75%, #FCDFEB 25%)
+  }
+</style>
