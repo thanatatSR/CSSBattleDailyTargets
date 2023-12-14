@@ -1,0 +1,59 @@
+<div class="frame">
+  <div class="one">
+    <div class="child"></div>
+  </div>
+  <div class="two"></div>
+  <div class="three"></div>
+  <div class="four"></div>
+</div>
+<style>
+  * {
+    background: #D4EFFC
+  }    
+  .frame {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%) rotate(45deg);
+  }
+  .one {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    background: #000039
+  }
+  .child {
+    width: 40px;
+    height: 40px;
+    background: #7BAFDE
+  }
+  .two {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    right: 0;
+    background: linear-gradient( to right, #6867D4 50%, #7BAFDE 50%)
+  }
+  .three {
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    bottom: 0;
+    background: linear-gradient( to bottom, #6867D4 50%, #7BAFDE 50%)
+  }
+  .four {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    bottom: 0;
+    background: #7BAFDE
+  }
+</style>
