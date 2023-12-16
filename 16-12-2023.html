@@ -1,0 +1,36 @@
+<div class="frame">
+  <div class="outer"></div>
+  <div class="inner"></div>
+</div>
+<style>
+  * {
+    background: #F58220
+  }
+  .frame {
+    position: relative;
+    width: 240px;
+    height: 120px;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    overflow: hidden
+  }
+  .outer {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    border-radius: 1000px;
+    background: #5E0000
+  }
+  .inner {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    border-radius: 100px;
+    background: #BA131A
+  }
+</style>
