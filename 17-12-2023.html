@@ -1,0 +1,39 @@
+<div class="frame">
+  <div class="left">
+    <div class="button"></div>
+  </div>
+  <div class="right"></div>
+</div>
+<style>
+  * {
+    background: #004928;
+  }
+  .frame {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 250px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    background: #E5EDE9
+  }
+  .left {
+    width: 75px;
+    height: 150px;
+    background: #E5EDE9
+  }
+  .right {
+    margin-top: 25px;
+    width: 150px;
+    height: 100px;
+    background: #004928
+  }
+  .button {
+    margin-left: 25px;
+    width: 25px;
+    height: 150px;
+    background: linear-gradient(#E5EDE9 25px, #004928 25px 50px, #E5EDE9 50px 75px, #004928 75px 125px, #E5EDE9 125px)
+  }
+</style>
