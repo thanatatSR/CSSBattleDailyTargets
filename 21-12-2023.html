@@ -1,0 +1,62 @@
+<div class="frame">
+  <div class="cir left">
+    <div class="stick rotate-1"></div>
+  </div>
+  <div class="cir">
+    <div class="stick"></div>
+  </div>
+  <div class="cir right">
+    <div class="stick rotate-2"></div>
+  </div>
+</div>
+<style>
+  * {
+    background: #62324E
+  }
+  .frame {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    width: 260px;
+    height: 120px;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+  }
+  .cir {
+    position: absolute;
+    margin-top: 11.5%;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: #FCDFEB
+  }
+  .left {
+    left: 0
+  }
+  .right {
+    right: 0
+  }
+  .stick {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%) rotate(-45deg);
+    width: 155px;
+    height: 15px;
+    background: #FCDFEB
+  }
+  .rotate-1 {
+    width: 75px;
+    top: 78.5%;
+    left: 30%;
+    transform: rotate(45deg)
+  }
+  .rotate-2 {
+    width: 75px;
+    top: 0%;
+    left: -52%;
+    transform: rotate(45deg)
+  }
+</style>
