@@ -1,0 +1,30 @@
+<div class="frame">
+  <div class="tri"></div>
+  <div class="tri reverse"></div>
+</div>
+<style>
+  * {
+    background: #32295A
+  }
+  .frame {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    width: 180px;
+    height: 160px;
+    background: #B0ACD5;
+    overflow: hidden
+  }
+  .tri {
+    position: absolute;
+    top: -50%;
+    border-left: 100px solid #B0ACD5;
+    border-bottom: 160px solid #32295A
+  }
+  .reverse {
+    top: 50%;
+    right: 0%;
+    transform: rotate(180deg)
+  }
+</style>
