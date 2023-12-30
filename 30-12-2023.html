@@ -1,0 +1,46 @@
+<div class="frame">
+  <div class="hat">
+    <div class="tri"></div>
+    <div class="square"></div>
+  </div>
+  <div class="hat reverse">
+    <div class="tri"></div>
+    <div class="square"></div>
+  </div>
+</div>
+<style>
+  * {
+    background: #A49FBB
+  }
+  .frame {
+    position: relative;
+    width: 260px;
+    height: 210px;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%)
+  }
+  .hat {
+    position:absolute;
+    width: 260px;
+    height: 90px
+  }
+  .tri {
+    position:relative;
+    width: 0px;
+    left: 50%;
+    transform: translate( -50%, 0%);
+    border-left: 50px solid #A49FBB;
+    border-right: 50px solid #A49FBB;
+    border-bottom: 60px solid #291D61
+  }
+  .square {
+    width: 260px;
+    height: 30px;
+    background: #291D61
+  }
+  .reverse {
+    bottom: 0%;
+    transform: rotate(180deg)
+  }
+</style>
