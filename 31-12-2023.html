@@ -1,0 +1,28 @@
+<div class="frame">
+  <div class="left"></div>
+  <div class="left reverse"></div>
+</div>
+<style>
+  * {
+    background:#7BAFDE
+  }
+  .frame{
+    display:flex;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:200px;
+    height:100px
+  }
+  .left{
+    width:100px;
+    height:100px;
+    transform:skewy(26.5deg);
+    background:#6867D4
+  }
+  .reverse{
+    transform:skewy(-26.5deg);
+    background:#000039
+  }
+</style>
