@@ -1,0 +1,48 @@
+<div class="frame">
+  <div class="cir"></div>
+  <div class="tri"></div>
+  <div class="tri reverse"></div>
+  <div class="gradient"></div>
+</div>
+<style>
+  * {
+    background: #14313E
+  }
+  .frame {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    width: 150px;
+    height: 150px
+  }
+  .cir {
+    position: absolute;
+    left: 50%;
+    transform: translate( -50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: #F16348;
+    z-index: 1
+  }
+  .tri {
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    border-top: 135px solid #14313E;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    background: linear-gradient(red, red);
+    z-index: 0
+  }
+  .reverse {
+    left: -50%;
+  }
+  .gradient {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(#14313E 25px, #BD3F4C 25px 45px, #F16348 45px 65px, #BD3F4C 65px 80px, #F16348 80px 100px, #BD3F4C 100px 115px, #F16348 115px 135px, #BD3F4C 135px);
+    z-index: -1
+  }
+</style>
