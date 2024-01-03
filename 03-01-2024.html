@@ -1,0 +1,35 @@
+<div class="frame">
+  <div class="stick one"></div>
+  <div class="stick two"></div>
+  <div class="stick three"></div>
+</div>
+<style>
+  * {
+    background: #92278F
+  }
+  .frame {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 210px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    background: #FFF579
+  }
+  .stick {
+    width: 30px;
+  }
+  .one {
+    margin-right: 30px;
+    background: linear-gradient(to bottom, #92278F 90px, #FFF579 90px 120px, #92278F 120px)
+  }
+  .two {
+    background: linear-gradient(to bottom, #92278F 60px, #FFF579 60px 90px, #92278F 90px)
+  }
+  .three {
+    margin-left: 30px;
+    background: linear-gradient(to bottom, #92278F 30px, #FFF579 30px 60px, #92278F 60px)
+  }
+</style>
