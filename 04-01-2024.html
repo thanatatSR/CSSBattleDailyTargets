@@ -1,0 +1,32 @@
+<div class="frame">
+  <div class="stick"></div>
+  <div class="stick small"></div>
+  <div class="stick"></div>
+</div>
+<style>
+  * {
+    background: #7EA26F
+  }
+  .frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    width: 160px;
+    height: 160px;
+    background: linear-gradient(to right, #7EA26F 40px, #204F23 40px 120px, #7EA26F 120px)
+  }
+  .stick {
+    width: 160px;
+    height: 20px;
+    background: #204F23
+  }
+  .small {
+    margin: auto;
+    width: 120px;
+    background: linear-gradient(to right, #204F23 50px, #7EA26F 50px 70px, #204F23 70px)
+  }
+</style>
