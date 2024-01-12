@@ -1,0 +1,39 @@
+<div class="frame">
+  <div class="leaf left"></div>
+  <div class="leaf mid"></div>
+  <div class="leaf right"></div>
+</div>
+<style>
+  * {
+    background: #762B2B
+  }
+  .frame {
+    position: relative;
+    width: 340px;
+    height: 90px;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%)
+  }
+  .leaf {
+    position: absolute;
+    top: 50%;
+    transform: translate( 0%, -50%) rotate(-45deg);
+    width: 60px;
+    height: 60px;
+    border-radius: 0 50px;
+    background: #FFF685
+  }
+  .left {
+    left: 3.7%;
+  }
+  .mid {
+    left: 32.3%;
+    width: 120px;
+    height: 120px;
+    border-radius: 0 100px
+  }
+  .right {
+    right: 3.7%;
+  }
+</style>
