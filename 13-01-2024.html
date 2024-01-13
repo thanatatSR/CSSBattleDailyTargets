@@ -1,0 +1,49 @@
+<div class="frame">
+  <div class="obj">
+    <div class="tri"></div>
+    <div class="square"></div>
+    <div class="tri reverse"></div>
+  </div>
+  <div class="obj mirror">
+    <div class="tri"></div>
+    <div class="square"></div>
+    <div class="tri reverse"></div>
+  </div>
+</div>
+<style>
+  * {
+    background: #7BAFDE
+  }
+  .frame {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%)
+  }
+  .obj {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90px;
+    height: 200px
+  }
+  .tri {
+    border-bottom: 60px solid #000039;
+    border-right: 90px solid #7BAFDE
+  }
+  .square {
+    width: 90px;
+    height: 40px;
+    background: #6867D4
+  }
+  .reverse {
+    transform: scaleY(-1)
+  }
+  .mirror {
+    transform: scaleX(-1)
+  }
+</style>
