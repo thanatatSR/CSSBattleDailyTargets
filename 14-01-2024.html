@@ -1,0 +1,57 @@
+<div class="frame">
+  <div class="two">
+    <div class="cir"></div>
+    <div class="box"></div>
+  </div>
+  <div class="stick"></div>
+  <div class="stick thin"></div>
+</div>
+<style>
+  * {
+    background: #7C402E
+  }
+  .frame {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 300px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%)
+  }
+  .two {
+    width: 100px;
+    height: 150px
+  }
+  .cir {
+    width: 50px;
+    height: 100px;
+    border-color: #F1E5DF;
+    border-style: solid;
+    border-width: 0px 50px 0px 0px;
+    border-radius: 100px
+  }
+  .cir:before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: #F1E5DF
+}
+  .box {
+    width: 100px;
+    height: 50px;
+    background: #F1E5DF
+  }
+  .stick {
+    width: 100px;
+    height: 150px;
+    border-radius: 50px;
+    background: #F1E5DF
+  }
+  .thin {
+    width: 50px
+  }
+</style>
