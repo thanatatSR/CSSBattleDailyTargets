@@ -1,0 +1,32 @@
+<div class="frame">
+  <div class="stick"></div>
+  <div class="stick reverse"></div>
+</div>
+<style>
+  * {
+    background: black
+  }
+  .frame {
+    position: relative;
+    width: 320px;
+    height: 220px;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    background: white
+  }
+  .stick {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    width: 40px;
+    height: 300px;
+    background: white
+  }
+  .reverse {
+    height: 400px;
+    transform: translate( -50%, -50%) rotate(90deg);
+    background: linear-gradient( white 180px, black 180px 220px, white 220px 400px)
+  }
+</style>
