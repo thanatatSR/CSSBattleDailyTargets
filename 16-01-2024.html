@@ -1,0 +1,51 @@
+<div class="frame">
+  <div class="bot abs"></div>
+  <div class="mid abs"></div>
+  <div class="top abs"></div>
+  <div class="close-tag abs"></div>
+</div>
+<style>
+  body {
+    background: #002A6B
+  }
+  .frame {
+    position: relative;
+    width: 120px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    overflow: visible;
+    background: #C7E7FB
+  }
+  .top {
+    left: 50%;
+    transform: translate( -50%);
+    border-top: 90px solid #C7E7FB;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent
+  }
+  .mid {
+    top: 20%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    border-bottom: 120px solid #5CC4F4;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent
+  }
+  .bot {
+    bottom: 0%;
+    border-bottom: 60px solid #002A6B;
+    border-left: 60px solid #C7E7FB;
+    border-right: 60px solid #C7E7FB
+  }
+  .close-tag {
+    top: -20%;
+    width: 120px;
+    height: 30px;
+    background: #002A6B
+  }
+  .abs {
+    position: absolute
+  }
+</style>
